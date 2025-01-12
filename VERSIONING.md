@@ -5,9 +5,9 @@ We use [Semantic Versioning](https://semver.org/) to version Simple Icons. In sh
 For Simple Icons, given a change to the version number you can expect the following kinds of changes:
 
 | Version number increase | Kinds of changes |
-| :---- | :---- |
-| _Major_ | Removed icons; Renamed icons; Breaking API changes |
-| _Minor_ | New icons; API changes |
+| :-- | :-- |
+| _Major_ | Removed icons; Slug changed icons; Breaking API changes |
+| _Minor_ | New icons; Title changed icons; API changes |
 | _Patch_ | Updated SVGs; Updated metadata |
 
 ## Release Schedule
@@ -18,9 +18,4 @@ _Major_ releases are scheduled on a half-year basis, mainly to remove old SVGs. 
 
 ## Deprecation
 
-For approximately 3 months after a _major_ release, the _major_ release preceding it will be supported. After 3 months, the previous _major_ release is deprecated and will no longer be supported.
-
-Support of a _major_ version entails the following:
-
-- SVGs and metadata of brands will be updated on request. This excludes brands that were removed in the new _major_ release.
-- Bugs in the npm library will be updated if reported.
+After a _major_ release, the only other supported version is the last version of the previous _major_ release. This previous version will only receive bug fixes to either the npm library, or our internal APIs.
